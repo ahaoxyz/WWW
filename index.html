@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见中药材介绍</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f5e9;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #8b4513;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #5c3a21;
+            font-size: 2.5em;
+        }
+        .herb-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        .herb-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #8b4513;
+        }
+        .herb-name {
+            color: #5c3a21;
+            font-size: 1.8em;
+            margin-top: 0;
+            border-bottom: 1px dashed #8b4513;
+            padding-bottom: 10px;
+        }
+        .herb-image {
+            float: left;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .herb-latin {
+            font-style: italic;
+            color: #666;
+        }
+        .herb-property {
+            font-weight: bold;
+            color: #8b4513;
+        }
+
+        @media (max-width: 600px) {
+            .herb-container {
+                grid-template-columns: 1fr;
+            }
+            .herb-image {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>常见中药材介绍</h1>
+	<p>王一博 202401208041</p>
+        <p>探索传统中医药的智慧与价值</p>
+    </header>
+
+    <div class="herb-container">
+        <!-- 药材1：人参 -->
+        <div class="herb-card">
+            <h2 class="herb-name">人参</h2>
+            <img src="https://img2.baidu.com/it/u=3249313103,3781921768&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766" alt="人参" class="herb-image">
+            <p class="herb-latin">Panax ginseng C. A. Mey.</p>
+            <p><span class="herb-property">性味归经：</span>甘、微苦，微温。归脾、肺、心经。</p>
+            <p><span class="herb-property">功效：</span>大补元气，复脉固脱，补脾益肺，生津安神。</p>
+            <p><span class="herb-property">主治：</span>用于体虚欲脱，肢冷脉微，脾虚食少，肺虚喘咳，津伤口渴，内热消渴，久病虚羸，惊悸失眠，阳痿宫冷。</p>
+            <p><span class="herb-property">用法用量：</span>3～9g，另煎兑服；也可研粉吞服，一次2g，一日2次。</p>
+        </div>
+
+        <!-- 药材2：黄芪 -->
+        <div class="herb-card">
+            <h2 class="herb-name">黄芪</h2>
+            <img src="https://img1.baidu.com/it/u=1109100141,429548490&fm=253&fmt=auto&app=138&f=JPEG?w=399&h=399" alt="黄芪" class="herb-image">
+            <p class="herb-latin">Astragalus membranaceus (Fisch.) Bge.</p>
+            <p><span class="herb-property">性味归经：</span>甘，微温。归肺、脾经。</p>
+            <p><span class="herb-property">功效：</span>补气固表，利尿托毒，排脓，敛疮生肌。</p>
+            <p><span class="herb-property">主治：</span>用于气虚乏力，食少便溏，中气下陷，久泻脱肛，便血崩漏，表虚自汗，气虚水肿，痈疽难溃，久溃不敛。</p>
+            <p><span class="herb-property">用法用量：</span>9～30g。</p>
+        </div>
+
+        <!-- 药材3：当归 -->
+        <div class="herb-card">
+            <h2 class="herb-name">当归</h2>
+            <img src="https://img2.baidu.com/it/u=2656056839,1243796365&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500" alt="当归" class="herb-image">
+            <p class="herb-latin">Angelica sinensis (Oliv.) Diels</p>
+            <p><span class="herb-property">性味归经：</span>甘、辛，温。归肝、心、脾经。</p>
+            <p><span class="herb-property">功效：</span>补血活血，调经止痛，润肠通便。</p>
+            <p><span class="herb-property">主治：</span>用于血虚萎黄，眩晕心悸，月经不调，经闭痛经，虚寒腹痛，肠燥便秘，风湿痹痛，跌扑损伤，痈疽疮疡。</p>
+            <p><span class="herb-property">用法用量：</span>6～12g。</p>
+        </div>
+
+        <!-- 药材4：枸杞子 -->
+        <div class="herb-card">
+            <h2 class="herb-name">枸杞子</h2>
+            <img src="https://img0.baidu.com/it/u=3847340692,4128450278&fm=253&fmt=auto&app=120&f=JPEG?w=522&h=500" alt="枸杞子" class="herb-image">
+            <p class="herb-latin">Lycium barbarum L.</p>
+            <p><span class="herb-property">性味归经：</span>甘，平。归肝、肾经。</p>
+            <p><span class="herb-property">功效：</span>滋补肝肾，益精明目。</p>
+            <p><span class="herb-property">主治：</span>用于虚劳精亏，腰膝酸痛，眩晕耳鸣，内热消渴，血虚萎黄，目昏不明。</p>
+            <p><span class="herb-property">用法用量：</span>6～12g。</p>
+        </div>
+
+        <!-- 药材5：茯苓 -->
+        <div class="herb-card">
+            <h2 class="herb-name">茯苓</h2>
+            <img src="https://img2.baidu.com/it/u=1884371219,3431171751&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" alt="茯苓" class="herb-image">
+            <p class="herb-latin">Poria cocos (Schw.) Wolf</p>
+            <p><span class="herb-property">性味归经：</span>甘、淡，平。归心、肺、脾、肾经。</p>
+            <p><span class="herb-property">功效：</span>利水渗湿，健脾宁心。</p>
+            <p><span class="herb-property">主治：</span>用于水肿尿少，痰饮眩悸，脾虚食少，便溏泄泻，心神不安，惊悸失眠。</p>
+            <p><span class="herb-property">用法用量：</span>9～15g。</p>
+        </div>
+
+        <!-- 药材6：甘草 -->
+        <div class="herb-card">
+            <h2 class="herb-name">甘草</h2>
+            <img src="https://img2.baidu.com/it/u=2830732019,1388232238&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" alt="甘草" class="herb-image">
+            <p class="herb-latin">Glycyrrhiza uralensis Fisch.</p>
+            <p><span class="herb-property">性味归经：</span>甘，平。归心、肺、脾、胃经。</p>
+            <p><span class="herb-property">功效：</span>补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药。</p>
+            <p><span class="herb-property">主治：</span>用于脾胃虚弱，倦怠乏力，心悸气短，咳嗽痰多，脘腹、四肢挛急疼痛，痈肿疮毒，缓解药物毒性、烈性。</p>
+            <p><span class="herb-property">用法用量：</span>1.5～9g。</p>
+        </div>
+
+        <!-- 药材7：金银花 -->
+        <div class="herb-card">
+            <h2 class="herb-name">金银花</h2>
+            <img src="https://img1.baidu.com/it/u=2034700482,3587002652&fm=253&fmt=auto&app=120&f=JPEG?w=1200&h=800" alt="金银花" class="herb-image">
+            <p class="herb-latin">Lonicera japonica Thunb.</p>
+            <p><span class="herb-property">性味归经：</span>甘，寒。归肺、心、胃经。</p>
+            <p><span class="herb-property">功效：</span>清热解毒，疏散风热。</p>
+            <p><span class="herb-property">主治：</span>用于痈肿疔疮，喉痹，丹毒，热毒血痢，风热感冒，温病发热。</p>
+            <p><span class="herb-property">用法用量：</span>6～15g。</p>
+        </div>
+
+        <!-- 药材8：菊花 -->
+        <div class="herb-card">
+            <h2 class="herb-name">菊花</h2>
+            <img src="https://img1.baidu.com/it/u=2741154021,4156687738&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=607" alt="菊花" class="herb-image">
+            <p class="herb-latin">Chrysanthemum morifolium Ramat.</p>
+            <p><span class="herb-property">性味归经：</span>甘、苦，微寒。归肺、肝经。</p>
+            <p><span class="herb-property">功效：</span>散风清热，平肝明目。</p>
+            <p><span class="herb-property">主治：</span>用于风热感冒，头痛眩晕，目赤肿痛，眼目昏花。</p>
+            <p><span class="herb-property">用法用量：</span>5～9g。</p>
+        </div>
+    </div>
+
+</body>
+</html>
